@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron & MySQL</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <main class="conteiner-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-auto p-4">
+                    <h3>Cadastro de Produtos</h3>
+                    <form class="card card-body" id="productForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Informe o nome*" class="form-control" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="price" step="any" placeholder="Preço do produto*"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="description" class="form-control" rows="3"
+                                placeholder="Descrição do Produto"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Salvar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Lista de Produtos Cadastrados</h3>
+                    <div id="products"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
